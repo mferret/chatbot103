@@ -3,6 +3,7 @@ const actions = {
   'most-forked': require('./most-forked'),
   'show-languages': require('./show-languages'),
   'laugh': require('./laugh'),
+  'show-website': require('./show-website'),
 }
 
 export default async function handleAction(res, payload) {
