@@ -1,6 +1,6 @@
 const agent = require('superagent-promise')(require('superagent'), Promise)
 const formatter = require('../formatter')
-const languages = ['Asssembly', 'C', 'C++', 'Go', 'Java', 'JavaScript', 'Python', 'Ruby', 'Rust', 'Swift',]
+const languages = ['Assembly', 'C', 'C++', 'Go', 'Java', 'JavaScript', 'Python', 'Ruby', 'Rust', 'Swift',]
 
 export default async function showLanguage(res) {
   console.log('SHOW LANGUAGE')
