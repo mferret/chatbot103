@@ -7,18 +7,18 @@ export default async function trendingForks(res) {
 
   const replies = []
   const cardsReplies = []
-  const language = res.getMemory('language')
+  const language = res.getMemory('programming-language')
   console.log('======================================')
   console.log(language)
   console.log('======================================')
   replies.push(formatter.formatMsg(res.reply()))
   const response = await agent('GET', `https://api.github.com/search/repositories?q=language:${language.value}&sort=forks&order=desc`)
   console.log('======================================')
-  console.log(response)
+  // console.log(response)
   console.log('======================================')
   const repos = response.body.items.slice(0, 10)
   console.log('======================================')
-  console.log(repos)
+  //console.log(repos)
   console.log('======================================')
   repos.forEach((rep) => {
     cardsReplies.push({
